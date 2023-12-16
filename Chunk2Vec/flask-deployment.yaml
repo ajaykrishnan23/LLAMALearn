@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chunk2vec-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      containers:
+      - name: flask
+        image: 540009924757.dkr.ecr.us-east-1.amazonaws.com/chunk2vec:0.1  # Replace with your Docker image
+        ports:
+        - containerPort: 5000
