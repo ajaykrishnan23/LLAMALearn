@@ -1,2 +1,2 @@
 # LLAMALearn
-Building RAG workflows for AWS with LLMS
+Building RAG workflows for AWS with LLMs
